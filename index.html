@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- @todo: fill with your company info or remove -->
+  <meta name="description" content="">
+  <meta name="author" content="Themelize.me">
+  <!-- Bootstrap v4.1.1 CSS via CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+  <!-- Theme style -->
+  <link href="assets/css/theme-style.min.css" rel="stylesheet">
+  <!--Your custom colour override-->
+  <link href="#" id="colour-scheme" rel="stylesheet">
+  <!-- Your custom override -->
+  <link href="assets/css/custom-style.css" rel="stylesheet">
+  <!-- Optional: ICON SETS -->
+  <!-- Iconset: Font Awesome 5.0.13 via CDN -->
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+  <link href="assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+  <!-- Iconset: ionicons - http://ionicons.com/ -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!-- Iconset: Linearicons - https://linearicons.com/free -->
+  <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+  <!-- Iconset: Lineawesome - https://icons8.com/articles/line-awesome -->
+  <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+
+
+  <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicons/manifest.json">
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+  <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
+
+  <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+</head>
+
+<!-- ======== @Region: body ======== -->
+
+<body class="page page-index navbar-layout-default">
+
+  <!-- @plugin: page loading indicator, delete to remove loader -->
+  <div class="page-loader" data-toggle="page-loader"></div>
+
+  <a id="#top" href="#content" class="sr-only">Skip to content</a>
+
+  <!-- ======== @Region: #header ======== -->
+  <div id="header">
+    <!--Header upper region-->
+    <div class="header-upper">
+      <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+      <div class="header-inner container">
+        <!--user menu-->
+        <div class="header-block-flex order-1 mr-auto">
+          <nav class="nav nav-sm header-block-flex">
+            <a class="nav-link text-xs text-uppercase d-none d-md-block gold-font" href="index.html">District Home</a>
+          </nav>
+          <div class="header-divider header-divider-sm"></div>
+        </div>
+        <!--social media icons-->
+        <div class="nav nav-icons header-block order-12 float-right">
+          <!--@todo: replace with company social media details-->
+          <a href="#" class="nav-link"> <i class="fab fa-twitter-square icon-1x"></i> <span class="sr-only">Twitter</span> </a>
+          <a href="#" class="nav-link"> <i class="fab fa-facebook-square icon-1x"></i> <span class="sr-only">Facebook</span> </a>
+          <a href="#" class="nav-link"> <i class="fab fa-linkedin icon-1x"></i> <span class="sr-only">Linkedin</span> </a>
+          <a href="#" class="nav-link"> <i class="fab fa-google-plus-square icon-1x"></i> <span class="sr-only">Google plus</span> </a>
+        </div>
+      </div>
+    </div>
+    <div data-toggle="sticky" style="z-index: 1000;">
+
+      <!--Header search region - hidden by default -->
+      <div class="header-search collapse" id="search">
+        <form class="search-form container">
+          <input type="text" name="search" class="form-control search" value="" placeholder="Search">
+          <button type="button" class="btn btn-link gold-font"><span class="sr-only ">Search </span><i class="fa fa-search fa-flip-horizontal search-icon"></i></button>
+          <button type="button" class="btn btn-link close-btn gold-font" data-toggle="search-form-close "><span class="sr-only">Close </span><i class="fa fa-times search-icon"></i></button>
+        </form>
+      </div>
+
+      <!--Header & Branding region-->
+      <div class="header">
+        <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.html) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
+        <div class="header-inner container">
+          <!--branding/logo -->
+          <div class="header-brand">
+            <a class="header-brand-text" href="index.html" title="Home">
+              <h1 class="h2">
+                <span class="header-brand-text-alt"><img src="./assets/img/avon-logo.png" class="app_logo"><span class="header-brand-text-alt"></span>
+              </h1>
+            </a>
+            <div class="header-divider d-none d-lg-block"></div>
+            <div class="header-slogan d-none d-lg-block">Avon Lake City Schools</div>
+          </div>
+          <!-- other header content -->
+          <div class="header-block order-12">
+
+            <!--Search trigger -->
+            <a href="#search" class="btn btn-icon btn-link header-btn float-right order-11 gold-font" data-toggle="search-form" data-target=".header-search"><i class="fa fa-search fa-flip-horizontal search-icon"></i></a>
+
+            <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
+            <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i> </a>
+          </div>
+
+          <div class="navbar navbar-expand-md navbar-static-top">
+            <!--everything within this div is collapsed on mobile-->
+            <div class="navbar-main collapse">
+              <!--main navigation-->
+              <ul class="nav navbar-nav navbar-nav-stretch float-lg-right dropdown-effect-fade">
+
+                  <!-- Homepages -->
+                  <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-75 active">
+                      <a href="#" class="nav-link dropdown-toggle gold-font" id="indexs-drop" data-toggle="dropdown" data-hover="dropdown"> 
+                          District</a>
+                      <!-- Dropdown Menu - mega menu-->
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <a href="#" class="dropdown-item">
+                                About </a> 
+                            <a href="#" class="dropdown-item">Athletics</a> 
+                            <a href="#" class="dropdown-item">
+                                Board of Education</a> 
+                            <a href="#" class="dropdown-item">
+                                District Calendar</a>                        
+                            <a href="#" class="dropdown-item">
+                                Quality Report</a> 
+                            <a href="#" class="dropdown-item">
+                                Staff Directory</a> 
+                            <a href="#" class="dropdown-item">
+                                District Enrollment Area Map</a>
+                          </div>
+                          <div class="col-lg-6 d-none d-lg-block">
+                              <a href="#" class="dropdown-item">
+                                  Student Registration </a> 
+                              <a href="#" class="dropdown-item">Employment Application
+                                </a> 
+                              <a href="#" class="dropdown-item">
+                                  Job Postings</a> 
+                              <a href="#" class="dropdown-item">
+                                  District Calendar</a>                        
+                              <a href="#" class="dropdown-item">
+                                  Website Accessibility Statement</a> 
+                              <a href="#" class="dropdown-item">
+                                  Staff Directory</a> 
+                              <a href="#" class="dropdown-item">
+                                 Surveys</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+  
+                  <!-- Pages -->
+                  <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-75">
+                    <a href="#" class="nav-link dropdown-toggle gold-font" id="pages-drop" data-toggle="dropdown" data-hover="dropdown">Schools</a>
+                    <!-- Menu -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <a href="#" class="dropdown-item">
+                                Avon Lake High School </a> 
+                            <a href="#" class="dropdown-item">
+                                Learwood Middle School</a> 
+                            <a href="#" class="dropdown-item">
+                                Troy Intermediate School</a> 
+                            <a href="#" class="dropdown-item">
+                                Eastview Elementary School</a>                        
+                            <a href="#" class="dropdown-item">
+                                Erieview Elementary School</a> 
+                            <a href="#" class="dropdown-item">
+                                Redwood Elementary School</a> 
+                            <a href="#" class="dropdown-item">
+                                Westview Elementary School</a>
+                          </div>
+                          <div class="col-lg-6 d-none d-lg-block">
+                              <a href="#" class="dropdown-item">
+                                  St. Joseph </a> 
+                              <a href="#" class="dropdown-item">LEAPS
+                                </a> 
+                              <a href="#" class="dropdown-item">
+                                  Lorain County JVS</a> 
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+  
+                  <!-- Features -->
+                  <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-75">
+                    <a href="#" class="nav-link dropdown-toggle gold-font" id="more-drop" data-toggle="dropdown" data-hover="dropdown">Departments</a>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <a href="#" class="dropdown-item">
+                              Athletics</a> 
+                          <a href="#"  class="dropdown-item">
+                              Curriculum/Instruction</a> 
+                          <a href="#" class="dropdown-item">
+                             Health News</a> 
+                          <a  href="#" class="dropdown-item">
+                              Nutritional Services</a>                        
+                          <a  href="#" class="dropdown-item">
+                              Pupil Services</a> 
+                          <a  href="#" class="dropdown-item">
+                              Student Registration</a> 
+                          <a href="#" class="dropdown-item">
+                              Treasurer's Office</a>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <a href="#" class="dropdown-item">
+                                Transportation</a> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <!-- Shop megamenu -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link  gold-font" id="shop-drop" data-toggle="dropdown" data-hover="dropdown">Athletics</a>
+                  </li>
+  
+                  <!-- Elements/shortcodes -->
+                  <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-75">
+                    <a href="#" class="nav-link dropdown-toggle gold-font" id="elements-drop" data-toggle="dropdown" data-hover="dropdown">Parents & Students</a>
+                    <!-- Dropdown Menu - mega menu-->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <a href="shop.html" class="dropdown-item">
+                              Bus Routes</a> 
+                          <a href="#" class="dropdown-item">
+                              Calendars</a> 
+                          <a href="#" class="dropdown-item">
+                              Emergency Contact Form</a> 
+                          <a href="#" class="dropdown-item">
+                              Flyer Connection</a>                        
+                          <a href="#" class="dropdown-item">
+                              FACTS</a> 
+                          <a href="#" class="dropdown-item">
+                              MySchoolAccount</a> 
+                          <a href="#" class="dropdown-item">
+                              Naviance</a>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <a href="#" class="dropdown-item">
+                                Staff Directory</a> 
+                            <a href="#" class="dropdown-item">
+                                Student Registration</a>
+                            <a href="#"  class="dropdown-item">
+                               Forms</a>
+                            <a href="#" class="dropdown-item">
+                                Lunch Menus</a>
+                            <a href="#" class="dropdown-item">
+                                Supply Lists</a>
+                            <a href="#" class="dropdown-item">
+                                Pay for It</a>
+                            <a href="#" class="dropdown-item">
+                                PowerSchool Parents</a>
+                            <a href="#" class="dropdown-item">
+                            PowerSchool Students</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+  
+                  <!-- Mega menu example -->
+                  <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                    <a href="#" class="nav-link dropdown-toggle gold-font" id="megamenu-drop" data-toggle="dropdown" data-hover="dropdown">Community</a>
+                    <!-- Dropdown Menu - Mega Menu -->
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <a href="#" class="dropdown-item">
+                              Avon Lake City Schools Foundation</a> 
+                          <a href="#" class="dropdown-item">
+                              District PTA</a> 
+                          <a href="#" class="dropdown-item">
+                              City of Avon Lake</a> 
+                          <a href="#" class="dropdown-item">
+                              ALCS TV</a>                        
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Shop megamenu -->
+                  <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                    <a href="#" class="nav-link dropdown-toggle gold-font" id="shop-drop" data-toggle="dropdown" data-hover="dropdown">Staff</a>
+                    <!-- Dropdown Menu - mega menu-->
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <a href="#" class="dropdown-item">
+                                Web Docs</a> 
+                            <a href="#" class="dropdown-item">
+                                Web Mail</a> 
+                            <a href="#" class="dropdown-item">
+                                HR Kiosk</a> 
+                            <a href="#"  class="dropdown-item">
+                                AESOP</a>                        
+                            <a href="#" class="dropdown-item">
+                                PowerSchool Teachers</a> 
+                            <a href="#" class="dropdown-item">
+                                Discovery Assessment</a> 
+                            <a href="#" class="dropdown-item">
+                                Survey Dashboard</a>
+                          </div>
+                          <div class="col-lg-6 d-none d-lg-block">
+                              <a href="#" class="dropdown-item">
+                                  Employee Rights</a> 
+                              <a href="#" class="dropdown-item">
+                                  Professional Learning</a>
+                              <a href="#"  class="dropdown-item">
+                                  MAPS-NWEA Login</a>
+                              <a href="#" class="dropdown-item">
+                                  Lunch Menus</a>
+                              <a href="#" class="dropdown-item">
+                                  Compass Learning</a>
+                              <a href="#" class="dropdown-item">
+                                  Staff Log-in</a>
+                              <a href="#" class="dropdown-item">
+                                  iObservation</a>
+                              <a href="#" class="dropdown-item">
+                                  Public School Works
+                                </a>
+                              <a href="#" class="dropdown-item">
+                                  LPDC
+                                </a>
+                              <a href="#" class="dropdown-item">
+                                  Management of Activities Funds
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== @Region: #highlighted ======== -->
+  <div id="highlighted">
+    <!-- Showshow - Slider Revolution see: plugins/slider-revolution/examples&sources for help invoke using data-toggle="slider-rev" options can be passed to the slider via HTML5 data- ie. data-startwidth="960" -->
+    <div class="slider-wrapper rev_slider_wrapper fullscreen-container bg-black" data-page-class="slider-appstrap-theme">
+      <div class="rev_slider fullscreenbanner" data-toggle="slider-rev" data-settings='{"startwidth":1100, "startheight":620, "delay":10000}'>
+        <ul>
+          <!-- SLIDE 1 -->
+          <li class="slide overlay overlay-op-4 overlay-gradient" data-transition="fadethroughdark" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/slides/app_bg.jpg"
+            data-rotate="0" data-saveperformance="off" data-title="Slide" data-link="shop-list.html">
+            <img src="assets/img/slide-dummy.png" data-lazyload="assets/img/slides/slide1.jpg" alt="background image" data-bgposition="center top" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina />
+            <!-- SLIDE 1 Content-->
+            <div class="slide-content container" style="z-index: 10;">
+              <!--elements within .slide-content are pushed below navbar on "behind"-->
+              <!-- Layer 2 -->
+              <div class="tp-caption text-grey" data-x="['left','left','left','left']" data-hoffset="['0','0','0','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['60','60','60','60']" data-fontsize="['52','52','52','52']" data-width="none" data-height="none"
+                data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;color:red;","to":"o:1;","delay":1400},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                data-textAlign="['center','center','center','center']"> Welcome to Avon Lake City Schools
+              </div>
+              <!-- Layer 3 -->
+              <div class="tp-caption rs-parallaxlevel-8" data-frames='[{"from":"o:0;sX:3;sY:3;","speed":2000,"to":"o:0.20;sX:3;sY:3;","delay":1800,"ease":"default"},{"delay":"wait","speed":1200,"to":"x:[100%];","ease":"Power3.easeInOut"}]' data-x="left" data-y="bottom"
+                data-hoffset="-200" data-voffset="0" data-width="none" data-height="none" data-type="image" data-basealign="slide"> <i class="fa fa-bullseye icon-20x icon-bg op-1 text-white"></i>
+              </div>
+            </div>
+          </li>
+          <!-- SLIDE 2 -->
+          <li class="slide" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-rotate="0" data-saveperformance="off" data-title="Slide">
+            <img src="assets/img/slides/slide2.jpg" class="rev-slidebg bg-white" alt="Background image" data-bgcolor="#ffffff" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" data-no-retina />
+            <!-- LAYERS -->
+            <!-- Layer 1 -->
+            <div class="slide-content">
+
+            </div>
+          </li>
+          <!-- SLIDE 3 -->
+          <li class="slide overlay overlay-op-2" data-index="rs-3007" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+            data-thumb="assets/img/slides/slide3.jpg" data-rotate="0" data-saveperformance="off" data-title="Office">
+            <!-- MAIN IMAGE -->
+            <img src="assets/img/slides/slide3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg" data-no-retina />
+            <!-- LAYERS -->
+            <!-- BACKGROUND VIDEO LAYER -->
+          </li>
+        </ul>
+        <div class="tp-bannertimer tp-bottom"></div>
+      </div>
+      <!--end of tp-banner-->
+    </div>
+  </div>
+
+  <!-- ======== @Region: #content ======== -->
+  <div id="content" class="p-0">
+    <!-- Features -->
+    <div id="welcome-blog" class="container py-4 py-lg-6">
+      <h3 class=" text-uppercase font-weight-bold my-0 color-burgundy section-title" data-textAlign="left">
+          From the Superintendent
+      </h3>
+      <h5 class="mt-4 mb-0 "  data-textAlign="left">
+          Dear Student, Parent, Community Member or Other Interested Person,
+      </h5>
+      <br class="mb-3 w-100 mx-auto" />
+      <div class="row" data-textAlign="left">
+        <div class="col-lg-8 col-md-8 col-12">
+          <p>
+              Thank you for your interest in Avon Lake City Schools. Avon Lake City School District is a high performing, student centered community of learners. Support from all stakeholders inside the school district and outside is central to the success of our students. Every student achieving at their highest level is our goal. The dedication and hard work of everyone involved allows us to offer a learning environment Pre-K through the 12th grade full of opportunity for all learners.
+          </p>
+          <br>
+          <p>
+              Our website is one of the many ways that we work at keeping our students, parents and community members informed. Information at the district level, from the treasurer's office, at the campus level, in co-curricular and extra-curricular areas can be found on this site. Communication is vital to any organization's success and our focus is to keep the information current as well as to foster two-way communications. Please check out the new Avon Lake City School District App and help us keep in contact with all involved
+          </p>
+          <br>
+          <p>
+              For our students to get the education they need to be successful in today's world it will take all of us working together. We look forward to working together on the challenges we face and are excited about our potential. Please visit our schools - our doors are always open. Feel free to call (440-933-6210) or email with any questions, ideas or concerns.
+          </p>
+          <br>
+          <p>
+              Sincerely,
+          </p>
+          <p class="mb-0">
+              Bob Scott
+          </p>
+          <p class="mb-0">
+              Superintendent
+          </p>
+          <p class="mb-0">
+              Avon Lake City Schools
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12" id="boss-area">
+          <img src="./assets/img/robert.png" class="img-fluid"  id="boss-photo">
+        </div>
+      </div>
+      <br>
+      <div class="row" >
+        <div class="col-lg-6 col-md-6 col-12 hr-border ">
+          <h3 class=" text-uppercase font-weight-bold my-0  ml-8 color-burgundy news-events section-title">
+              District News
+          </h3>
+          <a class="my-0 gold-font view-action" data-textAlign="right"  href="#allNews">
+              View All News
+          </a>
+          <div class="row justify-content-around">
+            <div class="col-md-6 col-12">
+              <div class="mt-4 blog-grid owl-dots-center" data-toggle="owl-carousel" data-owl-carousel-settings='{"responsive":{"0":{"items":1}}, "margin":15, "lazyLoad":true}'>
+                <!--Blog post 1-->
+                <div class="blog-post">
+                  <div class="blog-media">
+                    <a href="blog-post<?php echo OUTPUT_FILE_TYPE; ?>
+                        ">
+                        <img data-src="assets/img/blog/ladybird.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid owl-lazy" />
+                      </a>
+                  </div>
+                  <div class="mt-4">
+                    <h4 >
+                      <a href="#" class="color-burgundy">Learwood Cross Country Information</a>
+                    </h4>
+                    <p class="font-14">
+                        Click here for for cross country pre-registration and season information. Click <a class="color-burgundy" href="#here">here</a> for the Learwood Cross Country Blog. Please Read the Cross Country blog for practice information
+                    </p>
+                    <a href="blog-post.html" class="btn btn-link"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                  </div>
+                </div>
+
+                <!--Blog post 2-->
+                <div class="blog-post">
+                  <div class="blog-media">
+                    <a href="blog-post<?php echo OUTPUT_FILE_TYPE; ?>
+                        ">
+                        <img data-src="assets/img/blog/ape.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid owl-lazy" />
+                      </a>
+                  </div>
+                  <div class="mt-4">
+                    <h4 class="color-burgundy">
+                      <a href="#" class="color-burgundy">The B.E.S.T.</a>
+                    </h4>
+                    <p class="font-14">The B.E.S.T (Building Excellent Schools Team) presented to the Board of Education at the June 12 School Board Meeting.  The Committee’s focus was to proactively examine options to provide all elementary students a learning environment that fosters growth, emotional well being, and balance. </p>
+                    <a href="blog-post.html" class="btn btn-link"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 ">
+            <h3 class="text-uppercase font-weight-bold  ml-8 my-0 color-burgundy news-events section-title" data-textAlign="left">
+                District Events
+            </h3>
+            <a class="my-0 gold-font view-action" data-textAlign="right" href="#allevents">
+                View All Events
+            </a>
+            <div class="row  justify-content-around mt-5 text-center" >
+              <div id="eventlist" class="col-12"></div>
+                <!-- <div class="col-md-8 col-12">
+                  <article aria-labelledby="fsArticle_1524_9402">
+                        <time datetime="2018-08-12T14:05:00-04:00" class="event-date"><span class="fsMonth">Jul</span> <span class="fsDay">09</span></time>
+                        <a class="color-burgundy  font-weight-bold" data-occur-id="9402" href="#" tabindex="0"> <i class="la la-smile-o font-weight-bold" style="font-size: 23px;"></i> ALHS PTA</a>
+                      <p style="margin-bottom: 0 !important;">
+                          <time datetime="2018-08-12T14:05:00-04:00" class="font-14"><i class="la la-clock-o font-weight-bold gold-font" ></i> <span class="gold-font"> 6</span>:<span class="gold-font">30</span> <span class="gold-font">PM</span></time>
+                      </p>
+                      <p class="ml-auto gold-font font-14"><i class="la la-map-marker font-weight-bold" ></i>Location</p>
+                  </article>
+                </div>
+                <hr class="mb-3 w-60 mx-auto" />
+                <div class="col-md-8 col-12">
+                    <article aria-labelledby="fsArticle_1524_9402">
+                          <time datetime="2018-08-12T14:05:00-04:00" class="event-date"><span class="fsMonth"></span></time>
+                          <a class="color-burgundy  font-weight-bold" data-occur-id="9402" href="#" tabindex="0"> <i class="la la-smile-o font-weight-bold" style="font-size: 23px;"></i> Board of Education Meeting</a>
+                        <p style="margin-bottom: 0 !important;">
+                            <time datetime="2018-08-12T14:05:00-04:00" class="font-14"><i class="la la-clock-o font-weight-bold gold-font" ></i></time>
+                        </p>
+                        <p class="ml-auto gold-font font-14"><i class="la la-map-marker font-weight-bold" ></i>Location</p>
+                    </article>
+                </div>
+                <hr class="mb-3 w-60 mx-auto" />
+                <div class="col-md-8 col-12">
+                  <article aria-labelledby="fsArticle_1524_9402">
+                        <time datetime="2018-08-12T14:05:00-04:00" class="event-date"><span class="fsMonth">Jul</span> <span class="fsDay">12</span></time>
+                    <div class="col-12">
+                        <a class="color-burgundy  font-weight-bold" data-occur-id="9402" href="#" tabindex="0"> <i class="la la-smile-o font-weight-bold" style="font-size: 23px;"></i> Kindergarten Playdate</a>
+                    </div>
+                    <div class="col-12">
+                      <div class="fsTimeRange">
+                          <time datetime="2018-08-12T14:05:00-04:00" class="font-14"><i class="la la-clock-o font-weight-bold gold-font"></i> <span class="gold-font"> 7</span>:<span class="gold-font">12</span> <span class="gold-font ">PM</span></time>
+                      </div>
+                      <p class="ml-auto gold-font font-14"><i class="la la-map-marker font-weight-bold"></i>Location</p>
+                    </div>
+                  </article>
+                </div>
+                <hr class="mb-3 w-60 mx-auto" />
+                <div class="col-md-8 col-12">
+                  <article aria-labelledby="fsArticle_1524_9402">
+                        <time datetime="2018-08-12T14:05:00-04:00" class="event-date "><span class="fsMonth">Aug</span> <span class="fsDay">15</span></time>
+                    <div class="col-12">
+                        <a class="color-burgundy  font-weight-bold" data-occur-id="9402" href="#" tabindex="0"> <i class="la la-smile-o font-weight-bold" style="font-size: 23px;"></i>Freshman Orientation</a>
+                    </div>
+                    <div class="col-12">
+                      <div class="fsTimeRange">
+                          <time datetime="2018-08-12T14:05:00-04:00" class="font-14"><i class="la la-clock-o font-weight-bold gold-font" ></i> <span class="gold-font"> 9</span>:<span class="gold-font">00</span> <span class="gold-font">AM</span></time>
+                      </div>
+                      <p class="ml-auto gold-font font-14"><i class="la la-map-marker font-weight-bold "></i>Location</p>
+                    </div>
+                  </article>
+                </div>
+                <hr class="mb-3 w-60 mx-auto" />   -->
+                       
+            </div>
+        </div>
+        <div class=" mt-4 col-lg-6 col-md-6 col-12">
+            <h3 class="text-uppercase font-weight-bold my-0 color-burgundy news-events section-title ml-8" data-textAlign="left">
+                Social Media
+            </h3>
+          <div class="row justify-content-around mt-5">
+            <div class="col-md-8 col-12">
+              <!-- Nav tabs -->
+              <ul class="nav nav-pills nav-pills-border-bottom-inside flex-column flex-lg-row" role="tablist">
+                <li class="nav-item"> <a class="nav-link active  text-center font-weight-bold text-uppercase" data-toggle="tab" data-target="#facebook-tab-1" role="tab"><i class="la la-facebook" style="font-size: 23px;"></i> Facebook</a> </li>
+                <li class="nav-item"> <a class="nav-link  text-center font-weight-bold text-uppercase" data-toggle="tab" data-target="#twitter-tab-2" role="tab"><i class="la la-twitter" style="font-size: 23px;"></i>Twitter</a> </li>
+              </ul>
+                <!-- Tab panes -->
+              <div class="tab-content py-3">
+                <div class="tab-pane active show" id="facebook-tab-1" role="tabpanel">
+                    <iframe name="f38ceaaa5970cc4" width="500px" height="500px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.4/plugins/page.php?app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F1e2RywyANNe.js%3Fversion%3D42%23cb%3Df321574425f8b3%26domain%3Dwww.avonlakecityschools.org%26origin%3Dhttp%253A%252F%252Fwww.avonlakecityschools.org%252Ff3a645600cf84a%26relation%3Dparent.parent&amp;container_width=508&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FAvon-Lake-City-Schools-190365467668925%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;width=500" style="border: none; visibility: visible; width: 500px; height: 500px;" class=""></iframe>
+                </div>
+                <div class="tab-pane menu-tab-2" id="twitter-tab-2" role="tabpanel">
+                    <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 600px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="730738100532547584" title="Twitter Timeline"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ======== @Region: #footer ======== -->
+  <footer id="footer" class="p-0">
+      <div class="container pt-4">
+        <div class="row justify-content-around footer-buttons">
+            <div class="col " >
+              <a class="" href="#" >
+                <img src="assets/img/footer-button-power.png" alt="Power school">
+              </a>
+            </div>
+            <div class="col">
+                <a class="" href="#" >
+                    <img src="assets/img/PayForItLink.png" alt="Pay for link">
+                  </a>
+            </div>
+            <div class="col">
+                <a class="" href="#" >
+                    <img src="assets/img/footer-button-flyer-connect.png" alt="flyer connect">
+                  </a>
+            </div>
+            <div class="col">
+                <a class="" href="#" >
+                    <img src="assets/img/footer-button-facts.png" alt="Facts">
+                  </a>
+            </div>
+            <div class="col">
+                <a class="" href="#" >
+                    <img src="assets/img/footer-button-my-account.png" alt="My accounts">
+                  </a>
+            </div>
+        </div>
+        <div class="row footer-border mt-4"></div>
+        <div class="row mt-4">
+          <div class="col-md-8 col-12">
+            <!--@todo: replace with company contact details-->
+            <h4 class="text-uppercase  gold-font">
+              Contact US
+            </h4>
+            <address>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="text-white" >
+                      <i class="fa fa-home fa-fw"></i>
+                      Avon Lake City Schools | 175 Avon Belden Road, Avon Lake, Ohio 44012
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+14409336210" class="text-white" target="_blank" >
+                        <i class="fa fa-phone fa-fw"></i>
+                        Telephone: (440) 933-6210 | Fax: (440) 933-6711
+                    </a>
+                   
+                  </li>
+                  <li>
+                      <a href="tel:+14409336210" class="text-white" target="_blank" ><i class="fas fa-phone-volume" style="font-size: 25px;"></i></a>
+                  </li>
+                  <li>
+                      <a href="tel:+14409336210" class="text-white" target="_blank" ><i class="fa fa-volume-control-phone"></i>Anonymous Tip Line</a>
+                  </li>
+                  <li>
+                      <a href="tel:+14409336210" class="text-white" target="_blank" ><i class="fa fa-volume-control-phone"></i>440-933-6210</a>
+                  </li>
+                </ul>
+              </address>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="nav ml-10 " style='text-align:right;' id="social">
+              <a href="#" class="nav-link text-grey text-hover-brand-twitter text-center"> <i class="fab fa-twitter icon-2x"></i> <span class="sr-only">Twitter</span>  </a>
+              <a href="#" class="nav-link text-grey text-hover-brand-facebook text-center"> <i class="fab fa-facebook icon-2x"></i> <span class="sr-only">Facebook</span></a>
+              <a href="#" class="nav-link text-grey text-hover-brand-linkedin text-center"> <i class="fab fa-linkedin icon-2x"></i> <span class="sr-only">Linkedin</span></a>
+              <a href="#" class="nav-link text-grey text-hover-brand-google-plus text-center"> <i class="fab fa-google-plus icon-2x"></i> <span class="sr-only">Google plus</span></a>
+            </div>
+          </div>
+      </div>
+      <hr class="my-0 hr-blank op-2" />
+      <!--@todo: replace with company copyright details-->
+      <div class="bg-inverse-dark text-sm py-3">
+        <div >
+          <div class="row text-right">
+            <div class="col-md-12 copy-right">
+              <p class="mb-0 ">Copyright 2018 | Developed by <a href="appstraptheme.com" class="footer-link gold-font">Emerge Inc</a></p>
+            </div>
+          </div>
+          <a href="#top" class="btn btn-icon btn-dark pos-fixed pos-b pos-r mr-3 mb-3 scroll-state-hidden" title="Back to top" data-scroll="scroll-state"><i class="fa fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  <!--Hidden elements - excluded from jPanel Menu on mobile-->
+  <div class="hidden-elements js-off-canvas-exclude">
+    <!--@modal - signup modal-->
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <form action="signup.html">
+          <div class="modal-content">
+            <div class="modal-header bg-light">
+              <h4 class="modal-title">
+                Sign Up
+              </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <h6 class="op-8">
+                  Price Plan
+                </h6>
+                <select class="form-control">
+                    <option>Basic</option>
+                    <option>Pro</option>
+                    <option>Pro +</option>
+                  </select>
+              </div>
+              <hr />
+
+              <h6 class="op-8">
+                Account Information
+              </h6>
+              <div class="form-group">
+                <label class="sr-only" for="signup-first-name">First Name</label>
+                <input type="text" class="form-control" id="signup-first-name" placeholder="First name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-last-name">Last Name</label>
+                <input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-username">Userame</label>
+                <input type="text" class="form-control" id="signup-username" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-email">Email address</label>
+                <input type="email" class="form-control" id="signup-email" placeholder="Email address">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-password">Password</label>
+                <input type="password" class="form-control" id="signup-password" placeholder="Password">
+              </div>
+              <div class="form-check text-xs">
+                <label class="form-check-label op-8">
+                    <input type="checkbox" value="term" class="form-check-input mt-1">
+                    I agree with the Terms and Conditions. 
+                  </label>
+              </div>
+            </div>
+            <div class="modal-footer bg-light py-3">
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-primary">Sign Up</button>
+                <button type="button" class="btn btn-link ml-1" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              </div>
+              <p class="text-xs text-right text-lh-tight op-8 my-0 ml-auto">Already signed up? <a href="login.html">Login here</a></p>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </form>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!--@modal - login modal-->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <form action="login.html">
+            <div class="modal-header bg-light">
+              <h4 class="modal-title">
+                Login
+              </h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label class="sr-only" for="login-email">Email</label>
+                <input type="email" id="login-email" class="form-control email" placeholder="Email">
+              </div>
+              <div class="form-group mb-0">
+                <label class="sr-only" for="login-password">Password</label>
+                <input type="password" id="login-password" class="form-control password mb-1" placeholder="Password">
+              </div>
+            </div>
+            <div class="modal-footer bg-light py-3">
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-link ml-1" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              </div>
+              <p class="text-xs text-right text-lh-tight op-8 my-0 ml-auto">
+                Not a member? <a href="#" class="signup">Sign up now!</a>
+                <br />
+                <a href="#">Forgotten password?</a>
+              </p>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+        </form>
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
+
+  <!--jQuery 3.3.1 via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper 1.14.3 via CDN, needed for Bootstrap Tooltips & Popovers -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Bootstrap v4.1.1 JS via CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->
+
+  <!--Custom scripts & AppStrap API integration -->
+  <script src="assets/js/custom-script.js"></script>
+  <!--AppStrap scripts mainly used to trigger libraries/plugins -->
+  <script src="assets/js/script.min.js"></script>
+  <script src="assets/js/gcalendar.js"></script>
+  <script type="text/javascript">
+       jQuery(function ($) {
+        $('#eventlist').gCalReader({
+            calendarId:'qualityismine@gmail.com',
+            apiKey:'AIzaSyB4J1IkUS4gTZSFKjjuB3jeNz13bxGJrUs',
+            dateFormat: 'MonthDay',
+            errorMsg: 'No events in calendar',
+            maxEvents: 5,
+            futureEventsOnly: true,
+            sortDescending: true
+          });
+	 });
+ </script>
+  <script>
+  </script>
+</body>
+
+</html>
