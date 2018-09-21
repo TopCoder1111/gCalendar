@@ -1,7 +1,5 @@
 Google Calendar feed reader - plugin to get upcoming events from a *public* google calendar
 
-#### [Demo](http://bradoyler.github.io/GoogleCalReader-jquery-plugin/examples/)
-
 ### Default Options
 ```js
 {
